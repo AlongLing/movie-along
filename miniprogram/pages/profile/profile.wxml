@@ -1,0 +1,11 @@
+<!--pages/profile/profile.wxml-->
+<view class='profile'>
+  <view class="profile-img">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <open-data type="userNickName" class="profile-name"></open-data>
+</view>
+<button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">获取用户昵称</button>
+<view>
+  <text>{{user.nickName}}</text>
+</view>
